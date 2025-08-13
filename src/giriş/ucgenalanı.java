@@ -3,15 +3,20 @@ import java.util.Scanner;
 
 public class ucgenalanı {
     public static void main(String[] args){
-        int a,b;
+        int a,b,c;
         double alan;
         Scanner input= new Scanner(System.in);
-        System.out.print("dik üçgenin dik kenarlarından birinin değerini giriniz:");
+
+        System.out.print("birinci kenarın değerini giriniz:");
         a= input.nextInt();
-        System.out.print("dik üçgenin diğer dik kenarının değerini giriniz:");
+        System.out.print("ikinci kenarın değerini giriniz:");
         b= input.nextInt();
-        alan=a*b/2;
-        System.out.println("dik üçgenin alanı:"+alan);
+        System.out.print("üçüncü kenarın değerini giriniz:");
+        c= input.nextInt();
+        double u=(a+b+c)/2;
+        alan = Math.sqrt(u*(u-a)*(u-b)*(u-c));
+
+        System.out.print("üçgenin alanı:"+alan);
 
     }
 }

@@ -10,7 +10,8 @@ public class whiledongusu {
             System.out.print("Şifreyi giriniz:");
             password= inp.nextInt();
             if(password==123){
-                System.out.println("Doğru");
+                System.out.print("Doğru");
+                isPasswordSuccess=true;
             }else{
                 System.out.println("Yanlış");
             }
